@@ -139,9 +139,7 @@ diferencial del grupo, usadas en este README.
 
 ### `video/`
 
-El video de la demostración es pesado para GitHub; ese archivo trae las
-instrucciones para añadir el enlace una vez se suba a una plataforma
-externa.
+Video donde se demuestra todo el funcionamiento simulado
 
 ---
 
@@ -153,4 +151,3 @@ externa.
 2. Construir los primeros módulos físicos (banda y mecanismo tapa-vaso)
    siguiendo el CAD y la memoria de cálculo de `02_banda_transportadora/`.
 3. Implementar el chatbot de voz que expone los datos del proyecto.
-4. Subir el video de demostración y enlazarlo en `video/README.md`.
