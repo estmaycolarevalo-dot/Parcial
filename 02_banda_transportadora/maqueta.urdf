@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<robot name="fabrica_estable_v3_clasificador">
+  <material name="blue_metal"><color rgba="0.05 0.15 0.35 1.0"/></material>
+  <material name="black_rubber"><color rgba="0.05 0.05 0.05 1.0"/></material>
+  <material name="white_machine"><color rgba="0.95 0.95 0.98 1.0"/></material>
+  <material name="base_material"><color rgba="0.3 0.3 0.3 1"/></material>
+  <material name="colombia_material"><color rgba="0.05 0.75 0.25 1.0"/></material>
+  <material name="extranjera_material"><color rgba="0.15 0.35 0.9 1.0"/></material>
+  <material name="boton_material"><color rgba="0.55 0.55 0.55 1.0"/></material>
+  <material name="led_apagado"><color rgba="0.2 0.2 0.2 1.0"/></material>
+  <material name="camara_lente"><color rgba="0.02 0.02 0.02 1.0"/></material>
+  <material name="brazo_material"><color rgba="0.2 0.45 0.75 1"/></material>
+  <material name="tapa_material"><color rgba="0.75 0.75 0.8 1"/></material>
+
+  <link name="cinta_seg1">
+    <visual><geometry><box size="4.0 0.4 0.1"/></geometry><origin xyz="0 0 0"/><material name="blue_metal"/></visual>
+    <visual><geometry><box size="3.9 0.3 0.05"/></geometry><origin xyz="0 0 0.08"/><material name="black_rubber"/></visual>
+    <inertial><mass value="20.0"/><inertia ixx="10.0" ixy="0" ixz="0" iyy="10.0" iyz="0" izz="1.5"/></inertial>
+  </link>
+  <link name="base_planta">
+    <inertial><mass value="1000.0"/><inertia ixx="100.0" ixy="0" ixz="0" iyy="100.0" iyz="0" izz="100.0"/></inertial>
+  </link>
+  <joint name="j_cinta_seg1" type="fixed">
+    <parent link="base_planta"/><child link="cinta_seg1"/><origin xyz="1.0 0.0 0.5"/>
+  </joint>
+
+  <link name="estacion_soporte">
+    <visual><geometry><cylinder radius="0.03" length="1.0"/></geometry><origin xyz="0 0 0.5"/><material name="base_material"/></visual>
+    <inertial><mass value="1.0"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial>
+  </link>
+  <joint name="j_estacion_soporte" type="fixed">
+    <parent link="base_planta"/><child link="estacion_soporte"/><origin xyz="0.3 0.0 0.65"/>
+  </joint>
+  <link name="estacion_camara">
+    <visual><geometry><box size="0.25 0.25 0.15"/></geometry><material name="white_machine"/></visual>
+    <visual><geometry><cylinder radius="0.035" length="0.06"/></geometry><origin xyz="0 0 -0.09"/><material name="camara_lente"/></visual>
+    <inertial><mass value="0.4"/><inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/></inertial>
+  </link>
+  <joint name="j_estacion_camara" type="fixed">
+    <parent link="estacion_soporte"/><child link="estacion_camara"/><origin xyz="0 0 0.5"/>
+  </joint>
+
+  <link name="led_colombia"><visual><geometry><sphere radius="0.025"/></geometry><material name="led_apagado"/></visual></link>
+  <joint name="j_led_colombia" type="fixed"><parent link="estacion_camara"/><child link="led_colombia"/><origin xyz="-0.08 0 0.09"/></joint>
+  <link name="led_extranjera"><visual><geometry><sphere radius="0.025"/></geometry><material name="led_apagado"/></visual></link>
+  <joint name="j_led_extranjera" type="fixed"><parent link="estacion_camara"/><child link="led_extranjera"/><origin xyz="0 0 0.09"/></joint>
+  <link name="led_boton"><visual><geometry><sphere radius="0.025"/></geometry><material name="led_apagado"/></visual></link>
+  <joint name="j_led_boton" type="fixed"><parent link="estacion_camara"/><child link="led_boton"/><origin xyz="0.08 0 0.09"/></joint>
+
+  <link name="caja_colombia">
+    <visual><geometry><box size="0.3 0.3 0.2"/></geometry><origin xyz="0 0 0.1"/><material name="colombia_material"/></visual>
+    <inertial><mass value="2.0"/><inertia ixx="0.02" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02"/></inertial>
+  </link>
+  <joint name="j_caja_colombia" type="fixed"><parent link="base_planta"/><child link="caja_colombia"/><origin xyz="0.3 0.6 0.0"/></joint>
+  <link name="caja_extranjera">
+    <visual><geometry><box size="0.3 0.3 0.2"/></geometry><origin xyz="0 0 0.1"/><material name="extranjera_material"/></visual>
+    <inertial><mass value="2.0"/><inertia ixx="0.02" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02"/></inertial>
+  </link>
+  <joint name="j_caja_extranjera" type="fixed"><parent link="base_planta"/><child link="caja_extranjera"/><origin xyz="0.3 0.95 0.0"/></joint>
+  <link name="caja_boton">
+    <visual><geometry><box size="0.3 0.3 0.2"/></geometry><origin xyz="0 0 0.1"/><material name="boton_material"/></visual>
+    <inertial><mass value="2.0"/><inertia ixx="0.02" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02"/></inertial>
+  </link>
+  <joint name="j_caja_boton" type="fixed"><parent link="base_planta"/><child link="caja_boton"/><origin xyz="0.3 1.3 0.0"/></joint>
+
+  <link name="brazo_poste">
+    <visual><geometry><cylinder radius="0.015" length="1.3"/></geometry><origin xyz="0 0 0.65"/><material name="brazo_material"/></visual>
+  </link>
+  <joint name="j_brazo_poste" type="fixed"><parent link="base_planta"/><child link="brazo_poste"/><origin xyz="0.05 1.7 0"/></joint>
+  <link name="brazo_horizontal">
+    <visual><geometry><box size="0.25 0.03 0.03"/></geometry><origin xyz="0.125 0 0"/><material name="brazo_material"/></visual>
+  </link>
+  <joint name="j_brazo_horizontal" type="fixed"><parent link="brazo_poste"/><child link="brazo_horizontal"/><origin xyz="0 0 1.3"/></joint>
+  <link name="brazo_piston">
+    <visual><geometry><cylinder radius="0.008" length="0.1"/></geometry><origin xyz="0 0 -0.05"/><material name="brazo_material"/></visual>
+    <visual><geometry><cylinder radius="0.06" length="0.012"/></geometry><origin xyz="0 0 -0.106"/><material name="tapa_material"/></visual>
+  </link>
+  <joint name="j_brazo_piston" type="prismatic">
+    <parent link="brazo_horizontal"/><child link="brazo_piston"/><origin xyz="0.25 0 -0.05"/>
+    <axis xyz="0 0 -1"/><limit lower="0" upper="0.18" effort="5.0" velocity="1.0"/>
+  </joint>
+</robot>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+<rect width="1180" height="720" fill="#ffffff"/>
+<text x="30" y="34" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="17" font-weight="700" fill="#111">Arquitectura eléctrica — banda transportadora de monedas</text>
+<text x="30" y="54" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="12" font-weight="400" fill="#666">Sistema logístico de monedas inteligentes · ESP32 · 12 V · versión de referencia</text>
+<rect x="30" y="90" width="170" height="58" rx="6" fill="#fdf2f2" stroke="#333" stroke-width="1.4"/>
+<text x="115.0" y="113.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Fuente 12 V / 2 A</text>
+<text x="115.0" y="131.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">conmutada</text>
+<rect x="30" y="178" width="170" height="50" rx="6" fill="#fdf2f2" stroke="#333" stroke-width="1.4"/>
+<text x="115.0" y="208.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Fusible F1  2 A</text>
+<rect x="30" y="258" width="170" height="58" rx="6" fill="#fdf2f2" stroke="#333" stroke-width="1.4"/>
+<text x="115.0" y="281.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">C1  1000 µF / 25 V</text>
+<text x="115.0" y="299.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">desacoplo de entrada</text>
+<rect x="30" y="346" width="170" height="66" rx="6" fill="#fef9e7" stroke="#333" stroke-width="1.4"/>
+<text x="115.0" y="373.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Buck 12 V → 5 V</text>
+<text x="115.0" y="391.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">MP1584 · 3 A</text>
+<rect x="30" y="442" width="170" height="50" rx="6" fill="#fef9e7" stroke="#333" stroke-width="1.4"/>
+<text x="115.0" y="472.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">C2  470 µF</text>
+<path d="M115 148 L115 178" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M115 228 L115 258" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M115 316 L115 346" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M115 412 L115 442" fill="none" stroke="#d68910" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="300" y="120" width="200" height="96" rx="6" fill="#fdf2f2" stroke="#333" stroke-width="1.4"/>
+<text x="400.0" y="162.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">TB6612FNG</text>
+<text x="400.0" y="180.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">1,2 A cont. · 3,2 A pico</text>
+<rect x="580" y="120" width="190" height="96" rx="6" fill="#f4f6f7" stroke="#333" stroke-width="1.4"/>
+<text x="675.0" y="162.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Motorreductor</text>
+<text x="675.0" y="180.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">JGA25-371 12 V · 100 rpm</text>
+<rect x="580" y="250" width="190" height="70" rx="6" fill="#eaf2f8" stroke="#333" stroke-width="1.4"/>
+<text x="675.0" y="279.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Encoder Hall</text>
+<text x="675.0" y="297.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">11 PPR × 34 = 374</text>
+<path d="M200 119 L250 119 L250 142 L300 142" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="206" y="112" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#c0392b">+12 V → VM</text>
+<path d="M200 467 L250 467 L250 166 L300 166" fill="none" stroke="#d68910" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="256" y="186" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#d68910">+5 V → VCC</text>
+<path d="M500 152 L580 152" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="512" y="145" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#c0392b">AO1 / AO2</text>
+<rect x="300" y="300" width="200" height="150" rx="6" fill="#eaf2f8" stroke="#333" stroke-width="1.4"/>
+<text x="400" y="324" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">ESP32</text>
+<text x="400" y="342" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" font-weight="400" fill="#555">DevKit v1</text>
+<text x="316" y="368" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#333">GPIO 27  →  PWMA (20 kHz)</text>
+<text x="316" y="386" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#333">GPIO 25/26  →  AIN1/AIN2</text>
+<text x="316" y="404" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#333">GPIO 13  →  STBY</text>
+<text x="316" y="422" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#333">GPIO 34/35  ←  encoder A/B</text>
+<text x="316" y="440" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#333">GPIO 21/22  ↔  I²C</text>
+<path d="M200 467 L250 467 L250 430 L300 430" fill="none" stroke="#d68910" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="206" y="462" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#d68910">+5 V → VIN</text>
+<path d="M400 300 L400 216" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="406" y="262" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#1f4e79">PWM + DIR</text>
+<path d="M580 285 L540 285 L540 340 L500 340" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="506" y="300" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#1f4e79">A / B</text>
+<path d="M675 216 L675 250" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="830" y="300" width="200" height="58" rx="6" fill="#eaf2f8" stroke="#333" stroke-width="1.4"/>
+<text x="930.0" y="323.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">NAU7802</text>
+<text x="930.0" y="341.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">celda de carga · I²C</text>
+<rect x="830" y="378" width="200" height="58" rx="6" fill="#eaf2f8" stroke="#333" stroke-width="1.4"/>
+<text x="930.0" y="401.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">SSD1306</text>
+<text x="930.0" y="419.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">OLED de estado · I²C</text>
+<rect x="830" y="456" width="200" height="58" rx="6" fill="#eaf2f8" stroke="#333" stroke-width="1.4"/>
+<text x="930.0" y="479.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">E18-D80NK</text>
+<text x="930.0" y="497.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">sensor de paso</text>
+<path d="M500 434 L790 434 L790 211" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M790 329 L830 329" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M790 407 L830 407" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="796" y="452" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#1f4e79">bus I²C 100 kHz</text>
+<rect x="850" y="180" width="160" height="62" rx="6" fill="#eafaf1" stroke="#333" stroke-width="1.4"/>
+<text x="930.0" y="205.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">Rp1 · Rp2</text>
+<text x="930.0" y="223.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="11.5" fill="#555">4,7 kΩ a 3,3 V</text>
+<path d="M850 211 L790 211" fill="none" stroke="#1e8449" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="796" y="202" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#1e8449">pull-ups</text>
+<path d="M830 485 L660 485 L660 450 L500 450" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="666" y="478" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#1f4e79">salida NPN, colector abierto</text>
+<rect x="300" y="556" width="480" height="54" rx="6" fill="#f2f3f4" stroke="#333" stroke-width="1.4"/>
+<text x="540.0" y="588.0" text-anchor="middle" font-family="DejaVu Sans, Arial" font-size="14" font-weight="600" fill="#111">TIERRA COMÚN — un solo punto de unión</text>
+<path d="M115 540 L115 556" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M400 540 L400 556" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M675 540 L675 556" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M930 540 L930 556" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M115 540 L930 540" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300" y="534" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#555">GND potencia + GND señal se unen aquí y solo aquí</text>
+<text x="30" y="638" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="12" font-weight="700" fill="#111">Leyenda</text>
+<path d="M30 656 L64 656" fill="none" stroke="#c0392b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="72" y="660" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="11" font-weight="400" fill="#333">12 V potencia</text>
+<path d="M180 656 L214 656" fill="none" stroke="#d68910" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="222" y="660" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="11" font-weight="400" fill="#333">5 V</text>
+<path d="M330 656 L364 656" fill="none" stroke="#1e8449" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="372" y="660" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="11" font-weight="400" fill="#333">3,3 V</text>
+<path d="M480 656 L514 656" fill="none" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="522" y="660" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="11" font-weight="400" fill="#333">señal lógica</text>
+<path d="M630 656 L664 656" fill="none" stroke="#555555" stroke-width="1.8" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="672" y="660" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="11" font-weight="400" fill="#333">tierra</text>
+<text x="30" y="692" text-anchor="start" font-family="DejaVu Sans, Arial" font-size="10.5" font-weight="400" fill="#777">Nota: el motor y el ESP32 comparten tierra pero NO comparten el regulador. Alimentar el motor desde el pin 5 V del ESP32 provoca reinicios por caída de tensión.</text>
+</svg>

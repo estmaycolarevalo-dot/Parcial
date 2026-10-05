@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Archivos de estado generados en tiempo de ejecución (no se versionan,
+# solo se deja un ejemplo en estado_sistema_ejemplo.json)
+01_simulacion_pybullet/estado_sistema.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
